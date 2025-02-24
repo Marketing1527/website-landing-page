@@ -1,0 +1,29 @@
+# A Records (point to GitHub Pages servers)
+Type: A
+Name: @
+Value: 185.199.108.153
+TTL: 600 seconds (or 1 hour)
+
+Type: A
+Name: @
+Value: 185.199.109.153
+TTL: 600 seconds
+
+Type: A
+Name: @
+Value: 185.199.110.153
+TTL: 600 seconds
+
+Type: A
+Name: @
+Value: 185.199.111.153
+TTL: 600 seconds
+
+# CNAME Record (for www subdomain)
+Type: CNAME
+Name: www
+Value: yourusername.github.io
+TTL: 600 seconds
+
+# TXT Record for verification
+TXT @ google-site-verification=your_verification_code 

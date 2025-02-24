@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Contabilidad Pro - Your complete financial management solution. Track accounts, manage subscriptions, monitor credit scores, and get AI-powered insights.">
+    <meta name="keywords" content="finance app, money management, credit score, subscription management, financial tracking">
+    <meta property="og:title" content="Contabilidad Pro - Smart Financial Management">
+    <meta property="og:description" content="Take control of your finances with AI-powered insights and comprehensive financial tracking.">
+    <meta property="og:image" content="https://contabilidad-pro.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://contabilidad-pro.com">
+    <link rel="canonical" href="https://contabilidad-pro.com">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Contabilidad Pro - Your Complete Financial Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <span class="logo-text">Contabilidad</span>
+            <span class="logo-pro">Pro</span>
+            <div class="logo-shadow"></div>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button class="sign-in">Sign In</button>
+            <button class="get-started">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Do more with your money</h1>
+                <p>Contabilidad Pro delivers all the data, insight, functionality, tools, and support you need to keep your finances moving forward effectively.</p>
+                <div class="cta-buttons">
+                    <button class="primary-cta">Start with Contabilidad Pro</button>
+                
+                    </button>
+                </div>
+                <div class="pricing-tag">
+                    <span>$20.00/month</span>
+                    <span class="original-price">— $9.99
+                    </span>
+                    <span class="discount">50% off</span>
+                </div>
+            </div>
+            <div class="iphone-mockup">
+                <div class="iphone-frame">
+                    <div class="dynamic-island"></div>
+                    <div class="screen">
+                        <!-- App Interface -->
+                        <div class="app-header">
+                            <div class="status-bar">
+                                <span>9:41</span>
+                                <div class="status-icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                            </div>
+                            <div class="app-title">
+                                <h2>Overview</h2>
+                                <i class="fas fa-bars menu-icon"></i>
+                            </div>
+                            <div class="main-balance">
+                                <span class="balance-label">Total Balance</span>
+                                <div class="balance-amount">
+                                    <span class="currency">$</span>
+                                    <span class="value">9,625.05</span>
+                                </div>
+                                <span class="change positive">+$250 (5.7%) this month</span>
+                                <div class="quick-actions">
+                                    <button><i class="fas fa-arrow-down"></i>Buy</button>
+                                    <button><i class="fas fa-arrow-up"></i>Sell</button>
+                                    <button><i class="fas fa-exchange-alt"></i>Transfer</button>
+                                </div>
+                            </div>
+                            <div class="accounts-list">
+                                <div class="account-item bank">
+                                    <img src="assets/chase-logo.png" alt="Chase" class="bank-logo">
+                                    <div class="account-info">
+                                        <span class="account-name">Chase Checking</span>
+                                        <span class="account-balance">$3,249.12</span>
+                                    </div>
+                                </div>
+                                <div class="account-item bank">
+                                    <img src="assets/bofa-logo.png" alt="Bank of America" class="bank-logo">
+                                    <div class="account-info">
+                                        <span class="account-name">Bank of America</span>
+                                        <span class="account-balance">$2,830.45</span>
+                                    </div>
+                                </div>
+                                <div class="account-item payment">
+                                    <img src="assets/cashapp-logo.png" alt="Cash App" class="bank-logo">
+                                    <div class="account-info">
+                                        <span class="account-name">Cash App</span>
+                                        <span class="account-balance">$845.30</span>
+                                    </div>
+                                </div>
+                                <div class="account-item payment">
+                                    <img src="assets/venmo-logo.png" alt="Venmo" class="bank-logo">
+                                    <div class="account-info">
+                                        <span class="account-name">Venmo</span>
+                                        <span class="account-balance">$392.65</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button><i class="fas fa-arrow-down"></i>Buy</button>
+                                <button><i class="fas fa-arrow-up"></i>Sell</button>
+                                <button><i class="fas fa-gift"></i>Rewards</button>
+                                <button><i class="fas fa-book"></i>Tutorial</button>
+                            </div>
+                        </div>
+                        <div class="features-grid">
+                            <div class="feature-item active" data-section="accounts">
+                                <i class="fas fa-wallet"></i>
+                                <span>All Accounts</span>
+                            </div>
+                            <div class="feature-item" data-section="subscriptions">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Subscriptions</span>
+                            </div>
+                            <div class="feature-item" data-section="credit">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Credit Monitor</span>
+                            </div>
+                            <div class="feature-item" data-section="reports">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <span>Smart Reports</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-piggy-bank"></i>
+                                <span>Savings</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Investments</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-receipt"></i>
+                                <span>Bills</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-calculator"></i>
+                                <span>Budgeting</span>
+                            </div>
+                        </div>
+                        <div class="insights-section">
+                            <h3>Smart Insights</h3>
+                            <div class="insight-card">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Your subscription spending increased by 15% this month</p>
+                            </div>
+                            <div class="insight-card">
+                                <i class="fas fa-chart-bar"></i>
+                                <p>You're on track to meet your savings goal</p>
+                            </div>
+                        </div>
+                        <div class="social-card">
+                            <div class="card-content">
+                                <span>Follow Us</span>
+                                <p>Our @ContabilidadPro</p>
+                                <button class="follow-btn">
+                                    <i class="fab fa-twitter"></i>
+                                    Follow Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="crypto-list">
+                            <div class="crypto-item">
+                                <img src="assets/eth-logo.png" alt="Ethereum">
+                                <div class="crypto-info">
+                                    <span class="name">Ethereum</span>
+                                    <span class="price">$24,52.90</span>
+                                </div>
+                            </div>
+                            <div class="crypto-item">
+                                <img src="assets/btc-logo.png" alt="Bitcoin">
+                                <div class="crypto-info">
+                                    <span class="name">Bitcoin</span>
+                                    <span class="price">$32,45.40</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subscription Management Section -->
+    <section class="subscription-section">
+        <div class="section-container">
+            <div class="subscription-text">
+                <h2>Take Control of Your Subscriptions</h2>
+                <p>Identify and cancel unused subscriptions. Save up to $240 yearly by managing your recurring expenses.</p>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check"></i> Track all subscriptions in one place</li>
+                    <li><i class="fas fa-check"></i> Get alerts before payment renewals</li>
+                    <li><i class="fas fa-check"></i> Compare prices with alternatives</li>
+                </ul>
+            </div>
+            <div class="iphone-mockup subscription-mockup">
+                <div class="iphone-frame">
+                    <div class="dynamic-island"></div>
+                    <div class="screen">
+                        <div class="app-header">
+                            <div class="status-bar">
+                                <span>9:41</span>
+                                <div class="status-icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                            </div>
+                            <div class="app-title">
+                                <h2>Subscriptions</h2>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="subscription-details">
+                            <div class="subscription-header">
+                                <img src="assets/netflix-logo.png" alt="Netflix" class="service-logo">
+                                <h3>Netflix Premium</h3>
+                                <span class="price">$14.99/month</span>
+                            </div>
+                            <div class="subscription-stats">
+                                <div class="stat-item">
+                                    <span class="label">Next Payment</span>
+                                    <span class="value">March 15, 2024</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="label">Member Since</span>
+                                    <span class="value">Jan 2023</span>
+                                </div>
+                            </div>
+                            <div class="subscription-actions">
+                                <button class="cancel-btn">
+                                    <i class="fas fa-times-circle"></i>
+                                    Cancel Subscription
+                                </button>
+                                <button class="pause-btn">
+                                    <i class="fas fa-pause"></i>
+                                    Pause Subscription
+                                </button>
+                            </div>
+                            <div class="similar-services">
+                                <h4>Similar Services</h4>
+                                <div class="service-alternatives">
+                                    <div class="alternative">
+                                        <img src="assets/prime-logo.png" alt="Prime Video">
+                                        <span>$8.99/mo</span>
+                                    </div>
+                                    <div class="alternative">
+                                        <img src="assets/hulu-logo.png" alt="Hulu">
+                                        <span>$7.99/mo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section">
+        <div class="section-container reverse">
+            <div class="iphone-mockup reports-mockup">
+                <div class="iphone-frame">
+                    <div class="dynamic-island"></div>
+                    <div class="screen">
+                        <div class="app-header">
+                            <div class="status-bar">
+                                <span>9:41</span>
+                                <div class="status-icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                            </div>
+                            <div class="app-title">
+                                <h2>Expense Analysis</h2>
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="reports-content">
+                            <div class="spending-overview">
+                                <div class="chart-container">
+                                    <div class="pie-chart">
+                                        <div class="chart-legend">
+                                            <span class="total">$2,450</span>
+                                            <span class="period">This Month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-labels">
+                                    <div class="label-item">
+                                        <span class="dot shopping"></span>
+                                        <span class="label">Shopping</span>
+                                        <span class="amount">$820</span>
+                                    </div>
+                                    <div class="label-item">
+                                        <span class="dot food"></span>
+                                        <span class="label">Food & Dining</span>
+                                        <span class="amount">$640</span>
+                                    </div>
+                                    <div class="label-item">
+                                        <span class="dot transport"></span>
+                                        <span class="label">Transport</span>
+                                        <span class="amount">$490</span>
+                                    </div>
+                                    <div class="label-item">
+                                        <span class="dot utilities"></span>
+                                        <span class="label">Utilities</span>
+                                        <span class="amount">$500</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expense-trends">
+                                <h3>Recent Transactions</h3>
+                                <div class="transaction-list">
+                                    <div class="transaction-item">
+                                        <div class="transaction-icon shopping">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </div>
+                                        <div class="transaction-details">
+                                            <span class="merchant">Amazon</span>
+                                            <span class="date">Today</span>
+                                        </div>
+                                        <span class="amount">-$84.99</span>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="transaction-icon food">
+                                            <i class="fas fa-utensils"></i>
+                                        </div>
+                                        <div class="transaction-details">
+                                            <span class="merchant">Starbucks</span>
+                                            <span class="date">Yesterday</span>
+                                        </div>
+                                        <span class="amount">-$6.75</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insights-bar">
+                                <div class="insight">
+                                    <i class="fas fa-arrow-down decrease"></i>
+                                    <div class="insight-text">
+                                        <span>12% less</span>
+                                        <span>than last month</span>
+                                    </div>
+                                </div>
+                                <div class="insight">
+                                    <i class="fas fa-bullseye on-track"></i>
+                                    <div class="insight-text">
+                                        <span>On track with</span>
+                                        <span>budget goals</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reports-text">
+                <h2>Smart Financial Analytics</h2>
+                <p>Get a crystal-clear view of your spending habits with AI-powered insights and detailed breakdowns.</p>
+                
+                <div class="report-features">
+                    <div class="report-feature">
+                        <i class="fas fa-chart-pie"></i>
+                        <div class="feature-text">
+                            <h3>Spending Categories</h3>
+                            <p>See exactly where your money goes with automatic categorization and visual breakdowns</p>
+                        </div>
+                    </div>
+                    
+                    <div class="report-feature">
+                        <i class="fas fa-brain"></i>
+                        <div class="feature-text">
+                            <h3>AI-Powered Insights</h3>
+                            <p>Receive personalized recommendations to optimize your spending and increase savings</p>
+                        </div>
+                    </div>
+                    
+                    <div class="report-feature">
+                        <i class="fas fa-clock"></i>
+                        <div class="feature-text">
+                            <h3>Real-time Tracking</h3>
+                            <p>Monitor your expenses as they happen and stay on top of your financial goals</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-highlight">
+                    <div class="stat">
+                        <span class="number">25%</span>
+                        <span class="label">Average savings increase</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">15min</span>
+                        <span class="label">Daily financial review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit Score Section -->
+    <section class="credit-section">
+        <div class="section-container">
+            <div class="credit-text">
+                <h2>Boost Your Credit Score with AI</h2>
+                <p>Get personalized insights and recommendations to improve your creditworthiness across all major bureaus.</p>
+                
+                <div class="bureau-logos">
+                    <img src="assets/equifax-logo.png" alt="Equifax">
+                    <img src="assets/experian-logo.png" alt="Experian">
+                    <img src="assets/transunion-logo.png" alt="TransUnion">
+                </div>
+                
+                <div class="report-features">
+                    <div class="report-feature">
+                        <i class="fas fa-robot"></i>
+                        <div class="feature-text">
+                            <h3>AI Credit Assistant</h3>
+                            <p>Get personalized recommendations to improve your credit score</p>
+                        </div>
+                    </div>
+                    
+                    <div class="report-feature">
+                        <i class="fas fa-bell"></i>
+                        <div class="feature-text">
+                            <h3>Real-time Alerts</h3>
+                            <p>Instant notifications for any changes to your credit report</p>
+                        </div>
+                    </div>
+                    
+                    <div class="report-feature">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="feature-text">
+                            <h3>Score Tracking</h3>
+                            <p>Monitor your progress and see what actions impact your score</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-highlight">
+                    <div class="stat">
+                        <span class="number">45+</span>
+                        <span class="label">Points average increase</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">24/7</span>
+                        <span class="label">Credit monitoring</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="iphone-mockup credit-mockup">
+                <div class="iphone-frame">
+                    <div class="dynamic-island"></div>
+                    <div class="screen">
+                        <div class="app-header">
+                            <div class="status-bar">
+                                <span>9:41</span>
+                                <div class="status-icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                            </div>
+                            <div class="app-title">
+                                <h2>Credit Score</h2>
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="credit-content">
+                            <div class="score-overview">
+                                <div class="score-ring">
+                                    <svg viewBox="0 0 100 100" class="progress-ring">
+                                        <circle class="ring-bg" cx="50" cy="50" r="45"/>
+                                        <circle class="ring-progress" cx="50" cy="50" r="45"/>
+                                    </svg>
+                                    <div class="score-display">
+                                        <span class="current-score">785</span>
+                                        <span class="score-label">Excellent</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bureau-scores">
+                                <div class="bureau-score">
+                                    <img src="assets/equifax-logo.png" alt="Equifax">
+                                    <span class="score">782</span>
+                                </div>
+                                <div class="bureau-score">
+                                    <img src="assets/experian-logo.png" alt="Experian">
+                                    <span class="score">785</span>
+                                </div>
+                                <div class="bureau-score">
+                                    <img src="assets/transunion-logo.png" alt="TransUnion">
+                                    <span class="score">788</span>
+                                </div>
+                            </div>
+                            <div class="ai-insights">
+                                <h3>AI Credit Assistant</h3>
+                                <div class="insight-message">
+                                    <i class="fas fa-robot"></i>
+                                    <div class="message">
+                                        <p>"I notice your credit utilization is at 32%. Reducing it to below 30% could increase your score by ~15 points."</p>
+                                        <button class="action-btn">View Plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credit-factors">
+                                <h3>Credit Factors</h3>
+                                <div class="factor">
+                                    <div class="factor-header">
+                                        <span>Payment History</span>
+                                        <span class="factor-score excellent">Excellent</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 98%"></div>
+                                    </div>
+                                </div>
+                                <div class="factor">
+                                    <div class="factor-header">
+                                        <span>Credit Utilization</span>
+                                        <span class="factor-score good">Good</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Powerful features for your finances</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>All-in-One Dashboard</h3>
+                    <p>Manage all your accounts and investments in one place</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Smart Subscriptions</h3>
+                    <p>Track and optimize your recurring payments</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Credit Monitoring</h3>
+                    <p>Real-time credit score tracking and insights</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Smart Reports</h3>
+                    <p>AI-powered insights and recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="app-showcase">
+    </section>
+
+    <!-- Waitlist Section -->
+    <section class="waitlist">
+        <div class="waitlist-content">
+            <h2>Join the Waitlist</h2>
+            <p>Be the first to experience the future of financial management. Get early access and exclusive benefits.</p>
+            <form class="waitlist-form" id="waitlistForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="waitlist-btn">
+                        <span>Join Waitlist</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="form-footer">
+                    <span class="waitlist-count">
+                        <i class="fas fa-users"></i>
+                        2,346+ people joined
+                    </span>
+                    <span class="early-access">
+                        <i class="fas fa-star"></i>
+                        Get 3 months free
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What customers say</h2>
+        <p>Our customers love the difference our tools and services make in their financial lives.</p>
+        
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"This platform has completely transformed the way I manage my finances. It's intuitive, reliable, and has given me the confidence to make smarter financial decisions!"</p>
+                <div class="testimonial-author">
+                    <img src="assets/avatar1.png" alt="Profile" class="avatar">
+                    <span>- Sarah M.</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"As a small business owner, tracking cash flow used to be a nightmare. Thanks to this tool, I can focus on growing my business instead of stressing over numbers."</p>
+                <div class="testimonial-author">
+                    <img src="assets/avatar2.png" alt="Profile" class="avatar">
+                    <span>- James L.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 

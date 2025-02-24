@@ -1,0 +1,3 @@
+This is a Brave Rewards publisher verification file.
+Domain: contabilidad-pro.com
+Token: your_verification_token 

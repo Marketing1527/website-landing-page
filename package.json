@@ -1,0 +1,15 @@
+{
+  "name": "contabilidad-pro",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    // your dependencies
+  },
+  "devDependencies": {
+    "vite": "^2.7.2"
+  }
+} 

@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+http://www.contabilidad-pro.com/* https://contabilidad-pro.com/:splat 301!
+http://contabilidad-pro.com/* https://contabilidad-pro.com/:splat 301!
+
+# Optional: Redirect old pages to new ones
+/old-page /new-page 301 
