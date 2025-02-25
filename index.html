@@ -30,18 +30,17 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">
+        <div class="logo" onclick="scrollToWaitlist()">
             <span class="logo-text">Contabilidad</span>
             <span class="logo-pro">Pro</span>
             <div class="logo-shadow"></div>
         </div>
         <div class="nav-links">
             <a href="#features">Features</a>
-            <a href="#pricing">Pricing</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <button class="sign-in">Sign In</button>
-            <button class="get-started">Get Started</button>
+            <button class="get-started" onclick="scrollToWaitlist()">Get Started</button>
         </div>
     </nav>
 
@@ -52,9 +51,7 @@
                 <h1>Do more with your money</h1>
                 <p>Contabilidad Pro delivers all the data, insight, functionality, tools, and support you need to keep your finances moving forward effectively.</p>
                 <div class="cta-buttons">
-                    <button class="primary-cta">Start with Contabilidad Pro</button>
-                
-                    </button>
+                    <button class="primary-cta" onclick="scrollToWaitlist()">Start with Contabilidad Pro</button>
                 </div>
                 <div class="pricing-tag">
                     <span>$20.00/month</span>
@@ -659,5 +656,32 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function scrollToWaitlist() {
+            const waitlistSection = document.querySelector('.waitlist');
+            waitlistSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+            
+            // Focus on email input after scrolling
+            setTimeout(() => {
+                const emailInput = document.querySelector('.waitlist-form input[type="email"]');
+                emailInput.focus();
+            }, 1000);
+        }
+
+        // Add animation to waitlist section when it becomes visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(document.querySelector('.waitlist'));
+    </script>
 </body>
 </html> 
