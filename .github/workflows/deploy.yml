@@ -15,8 +15,8 @@ jobs:
         run: |
           # Add your build commands here
           # For example, if using npm:
-          # npm install
-          # npm run build
+          npm install
+          npm run build
 
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
