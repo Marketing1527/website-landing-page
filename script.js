@@ -32,14 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add mobile menu toggle
-    const menuButton = document.createElement('button');
-    menuButton.classList.add('mobile-menu-toggle');
-    menuButton.innerHTML = '<i class="fas fa-bars"></i>';
-    
-    const nav = document.querySelector('nav');
+    const menuButton = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
-    nav.insertBefore(menuButton, navLinks);
     
     menuButton.addEventListener('click', () => {
         navLinks.classList.toggle('show');
@@ -124,4 +118,26 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById(sectionId).classList.add('active');
         });
     });
+
+    window.cancelSubscription = function(button) {
+        // Hide the cancel button
+        button.style.display = 'none';
+
+        // Show the cancellation overlay
+        const overlay = button.parentElement.querySelector('.cancellation-overlay');
+        overlay.style.display = 'flex';
+
+        // Add the show class to trigger the animation
+        setTimeout(() => {
+            overlay.classList.add('show');
+        }, 100);
+
+        // Optionally hide the overlay after a few seconds
+        setTimeout(() => {
+            overlay.classList.remove('show');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 500);
+        }, 3000);
+    };
 }); 
